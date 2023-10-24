@@ -3,7 +3,9 @@
 	/* Colores */
 	--blanco: #FFFFFF;
 	--negro: #1B1C1E;
-	--fuentePrincipal: "Poppins", sans-serif;
+	--principal: #1E0E62;
+	--fuentePrincipal: "DM Sans", sans-serif;
+	--logo: "League Spartan", sans-serif;
 }
 
 /* Valor del documento */
@@ -50,4 +52,36 @@ a {
 img {
 	max-width: 100%;
 	display: block;
+}
+
+/* Navegación */
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+	text-align: center;
+	align-items: center;
+	gap: 2rem;
+	font-size: 2rem;
+}
+
+.navigation__link {
+	margin: 0 1rem;
+	font-size: 1.5rem;
+	color: var(--principal);
+}
+
+.navigation__link--logo {
+	font-weight: 700;
+	font-size: 3.7rem;
+	font-family: var(--logo);
+}
+
+.navigation__link--button {
+	padding: 0.7rem 2rem;
+	border-style: solid;
+	border-width: 1;
+	border-color: #EBEAED;
+	border-radius: 10rem;
 }
