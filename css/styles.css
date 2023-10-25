@@ -54,6 +54,13 @@ img {
 	display: block;
 }
 
+/* Selectores de atributos */
+[class$="__container"] {
+	max-width: 120rem;
+	margin: 0 auto;
+	width: 90%;
+}
+
 /* ------------------- PÁGINA WEB ------------------- */
 
 /* Header */
@@ -63,31 +70,82 @@ img {
 	background-position: top right;
 	background-size: 100%;
 	background-color: #2f1893;
+	position: relative;
 }
 
 .header__grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
-	background-image: linear-gradient(to left, transparent 50%, #1b1c1e00),
-		url(../src/MacbookPro_Header.svg);
+	padding-bottom: 13.6rem;
+	padding-top: 5rem;
+}
+
+.header__graphic {
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size: 100%, 75rem;
-	padding: 4.98rem 0;
+	position: absolute;
+	padding-left: 81rem;
+	margin-top: 8rem;
+
+	& .header__img {
+		width: 75rem;
+	}
 }
 
 .header__text {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: auto 1fr;
-	grid-column: 1 / 3;
 	text-align: center;
 	color: var(--blanco);
-	padding-top: 3rem;
-	padding-bottom: 11.5rem;
 	text-align: start;
 }
+
+.header__textoPrimario {
+	grid-column: 1 / 7;
+
+	& .header__heading {
+		font-size: 7rem;
+		font-weight: 600;
+	}
+	
+	& .header__paragraph {
+		font-size: 2.5rem;
+		padding-right: 45rem;
+	}
+}
+
+.header__textoSecundario {
+	grid-row: 2 / 3;
+	grid-column: 1 / 3;
+
+	& .header__heading {
+		font-size: 4rem;
+		font-weight: 500;
+	}
+	
+	& .header__paragraph {
+		font-size: 1.7rem;
+		padding-right: 9rem;
+	}
+}
+
+.header__textoTerceario {
+	grid-row: 2 / 3;
+	grid-column: 3 / 5;
+
+	& .header__heading {
+		font-size: 4rem;
+		font-weight: 500;
+	}
+	
+	& .header__paragraph {
+		font-size: 1.7rem;
+		padding-right: 9rem;
+	}
+}
+
+/*
 
 .header__heading {
 	font-size: 7rem;
@@ -100,9 +158,6 @@ img {
 	padding-right: 25rem;
 }
 
-.header__textoPrimario {
-	grid-column: 1 / 5;
-}
 
 .header__textoSecundario {
 	grid-column: 1 / 3;
@@ -139,12 +194,13 @@ img {
 		padding-left: 15rem;
 	}
 }
+*/
 
 /* Navegación */
 .navigation {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	padding-top: 2rem;
 	text-align: center;
 	align-items: center;
