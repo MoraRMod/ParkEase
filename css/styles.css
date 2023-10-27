@@ -242,6 +242,7 @@ img {
 .mainContent__content {
 	text-align: left;
 	grid-column: 2 / 4;
+	margin-bottom: 2rem;
 
 	& .mainContent__heading {
 		font-size: 2.5rem;
@@ -253,4 +254,19 @@ img {
 		padding-right: 20rem;
 		color: #6b6b6b;
 	}
+}
+
+.list__button {
+	border-radius: 2.8rem;
+	box-shadow: 0 0 0.4rem #666666;
+	background: #22cbb7;
+	font-size: 2.3rem;
+	border-style: none;
+	padding: 1.3rem 2rem;
+	color: var(--blanco);
+	transition: background 0.2s ease-out;
+}
+
+.list__button:hover {
+	background: #2bb3a1;
 }
