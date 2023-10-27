@@ -188,7 +188,7 @@ img {
 
 .main {
 	padding-left: 15rem;
-	padding-top: 5rem;
+	padding-top: 8rem;
 	color: var(--principal);
 
 	& .list__paragraph {
@@ -244,6 +244,7 @@ img {
 	grid-column: 2 / 4;
 
 	& .mainContent__heading {
+		font-size: 2.5rem;
 		margin-top: 0;
 		text-transform: uppercase;
 	}
