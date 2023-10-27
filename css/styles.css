@@ -184,9 +184,9 @@ img {
 	border-radius: 10rem;
 }
 
-/* Main */
+/* Process */
 
-.main {
+.process {
 	padding-left: 15rem;
 	padding-top: 8rem;
 	color: var(--principal);
@@ -196,16 +196,16 @@ img {
 	}
 }
 
-.main__heading {
+.process__heading {
 	font-weight: 900;
 }
 
-.main__grid {
+.process__grid {
 	display: grid;
 	grid-template-columns: auto 1fr;
 }
 
-.main__linePoints {
+.process__linePoints {
 	width: 7rem;
 }
 
@@ -226,35 +226,35 @@ img {
 	font-size: 1.8rem;
 }
 
-.mainContent {
+.processContent {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	padding-left: 3rem;
 }
 
-.mainContent__graphic {
+.processContent__graphic {
 	max-width: 100%;
 
-	& .mainContent__img {
+	& .processContent__img {
 		border-radius: 1rem;
 	}
 }
 
-.mainContent__content {
+.processContent__content {
 	text-align: left;
 	grid-column: 2 / 4;
 	margin-bottom: 2rem;
 	padding-left: 3rem;
 
-	& .mainContent__heading {
+	& .processContent__heading {
 		font-size: 2.5rem;
 		margin-top: 0;
 		padding-top: 2rem;
 		text-transform: uppercase;
 	}
 
-	& .mainContent__paragraph {
+	& .processContent__paragraph {
 		padding-right: 20rem;
 		color: #a1a1b0;
 	}
@@ -275,7 +275,7 @@ img {
 	background: #2bb3a1;
 }
 
-.main__linePoints {
+.process__linePoints {
 	border-left: thick solid #ebeaed;
 	border-width: 0.3rem;
 	height: 69rem;
@@ -284,7 +284,7 @@ img {
 	position: relative;
 }
 
-.main__dots {
+.process__dots {
 	background: #ebeaed;
 	color: #9594a5;
 	display: block;
@@ -296,28 +296,28 @@ img {
 	position: absolute;
 }
 
-.main__dots:nth-child(1) {
+.process__dots:nth-child(1) {
 	right: 4.85rem;
 }
 
-.main__dots:nth-child(1)::before {
+.process__dots:nth-child(1)::before {
 	content: "1";
 }
 
-.main__dots:nth-child(2) {
+.process__dots:nth-child(2) {
 	right: 4.85rem;
 	top: 24rem;
 }
 
-.main__dots:nth-child(2)::before {
+.process__dots:nth-child(2)::before {
 	content: "2";
 }
 
-.main__dots:nth-child(3) {
+.process__dots:nth-child(3) {
 	right: 4.85rem;
 	top: 66.5rem;
 }
 
-.main__dots:nth-child(3)::before {
+.process__dots:nth-child(3)::before {
 	content: "3";
 }
