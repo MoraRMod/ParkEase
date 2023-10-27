@@ -229,7 +229,6 @@ img {
 .mainContent {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	column-gap: 3.5rem;
 	align-items: center;
 	padding-left: 3rem;
 }
@@ -246,10 +245,12 @@ img {
 	text-align: left;
 	grid-column: 2 / 4;
 	margin-bottom: 2rem;
+	padding-left: 3rem;
 
 	& .mainContent__heading {
 		font-size: 2.5rem;
 		margin-top: 0;
+		padding-top: 2rem;
 		text-transform: uppercase;
 	}
 
