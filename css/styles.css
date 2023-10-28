@@ -4,6 +4,7 @@
 	--blanco: #ffffff;
 	--negro: #1b1c1e;
 	--principal: #1e0e62;
+	--secundario: #a1a1b0;
 	--fuentePrincipal: "DM Sans", sans-serif;
 	--logo: "League Spartan", sans-serif;
 }
@@ -186,11 +187,11 @@ img {
 /* Process */
 .process {
 	padding-left: 15rem;
-	padding-top: 8rem;
+	margin: 10rem auto;
 	color: var(--principal);
 
 	& .list__paragraph {
-		color: #a1a1b0;
+		color: var(--secundario);
 	}
 }
 
@@ -254,8 +255,12 @@ img {
 
 	& .processContent__paragraph {
 		padding-right: 20rem;
-		color: #a1a1b0;
+		color: var(--secundario);
 	}
+}
+
+.list__item:nth-child(5){
+	padding: 1rem;
 }
 
 .list__button {
@@ -322,12 +327,12 @@ img {
 
 /* Scanner */
 .scanner {
-	margin-top: 15rem;
+	margin: 15rem auto;
 	color: var(--principal);
 	margin-bottom: 10rem;
 
 	& .scanner__paragraph {
-		color: #a1a1b0;
+		color: var(--secundario);
 	}
 }
 
@@ -403,7 +408,7 @@ img {
 	background-repeat: no-repeat;
 	background-position: center calc(60%);
 	background-size: 100%;
-	margin-top: 18rem;
+	margin: 15rem auto;
 	padding: 12rem 0;
 }
 
@@ -416,7 +421,7 @@ img {
 	padding: 4rem 0;
 	text-align: center;
 	text-shadow: -0.2rem 0.2rem 1rem #00000080;
-	transition: transform .3s;
+	transition: transform 0.3s;
 }
 
 .purchase__content:hover {
@@ -461,7 +466,7 @@ img {
 
 /* Testimonials */
 .testimonials {
-	margin-top: 18rem;
+	margin: 15rem auto;
 	color: var(--principal);
 	text-align: center;
 	position: relative;
@@ -516,7 +521,7 @@ img {
 	margin: 0;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	color: #a1a1b0;
+	color: var(--secundario);
 	font-weight: 500;
 }
 
@@ -533,4 +538,56 @@ img {
 	100% {
 		opacity: 0;
 	}
+}
+
+/* Functionality */
+.functionality {
+	margin: 15rem auto;
+	color: var(--principal);
+	text-align: center;
+}
+
+.functionality__heading {
+	margin-bottom: 0;
+	font-size: 5rem;
+}
+
+.functionality__paragraph {
+	color: var(--secundario);
+	font-weight: 300;
+	padding: 0 33rem;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.functionality__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+	row-gap: 3rem;
+	padding: 0 3rem;
+}
+
+.target {
+	border: 0.3rem solid #ebeaed;
+	border-radius: .7rem;
+	padding: 3rem 5rem 0 5rem;
+}
+
+.target__heading {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.target__paragraph {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin: 0 auto 3.8rem auto;
+	color: var(--secundario);
+}
+
+.target__graphic {
+	max-width: 100%;
 }
