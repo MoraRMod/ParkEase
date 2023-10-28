@@ -70,7 +70,6 @@ img {
 	background-position: top right;
 	background-size: 100%;
 	background-color: #2f1893;
-	position: relative;
 }
 
 .header__grid {
@@ -396,4 +395,59 @@ img {
 
 .scanner__button:hover {
 	border-color: #cbcbcc;
+}
+
+/* Purchase */
+.purchase {
+	background: url(../src/Fondo_Purchase.svg);
+	background-repeat: no-repeat;
+	background-position: center calc(60%);
+	background-size: 100%;
+	margin-top: 18rem;
+	padding: 12rem 0;
+}
+
+.purchase__content {
+	color: var(--blanco);
+	background: #ffffff33;
+	box-shadow: 0 0.8rem 3.2rem 0 #0a0c2c5e;
+	backdrop-filter: blur(0.65rem);
+	border-radius: 1rem;
+	padding: 4rem 0;
+	text-align: center;
+	text-shadow: -0.2rem 0.2rem 1rem #00000080;
+}
+
+.purchase__paragraph {
+	margin: 0;
+	font-size: 2rem;
+}
+
+.purchase__heading {
+	margin: 0;
+	font-size: 5.5rem;
+}
+
+.purchase__button {
+	text-shadow: none;
+	border-radius: 2.8rem;
+	background: #188bdf;
+	font-weight: 300;
+	font-size: 2rem;
+	border-style: none;
+	padding: 1rem 2rem;
+	color: var(--blanco);
+	display: inline-block;
+	margin-top: 1.8rem;
+	transition: background 0.3s ease-out;
+}
+
+.purchase__button:hover {
+	background: #0e629e;
+}
+
+.purchase__info {
+	display: block;
+	margin-top: 3rem;
+	padding: 0 37rem;
 }
