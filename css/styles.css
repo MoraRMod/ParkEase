@@ -418,14 +418,15 @@ img {
 	text-shadow: -0.2rem 0.2rem 1rem #00000080;
 }
 
-.purchase__paragraph {
-	margin: 0;
-	font-size: 2rem;
-}
-
 .purchase__heading {
 	margin: 0;
 	font-size: 5.5rem;
+	line-height: 1.2;
+}
+
+.purchase__paragraph {
+	margin: 0;
+	font-size: 2rem;
 }
 
 .purchase__button {
@@ -438,7 +439,7 @@ img {
 	padding: 1rem 2rem;
 	color: var(--blanco);
 	display: inline-block;
-	margin-top: 1.8rem;
+	margin-top: 3rem;
 	transition: background 0.3s ease-out;
 }
 
