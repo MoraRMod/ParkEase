@@ -325,6 +325,7 @@ img {
 .scanner {
 	margin-top: 15rem;
 	color: var(--principal);
+	margin-bottom: 10rem;
 
 	& .scanner__paragraph {
 		color: #a1a1b0;
@@ -352,6 +353,17 @@ img {
 	right: 73rem;
 	border-radius: 4rem;
 	transform: rotate(180deg);
+}
+
+.scanner__blur {
+	position: absolute;
+	z-index: 0;
+	box-shadow: 0 0 3rem #777777;
+	border-radius: 5.4rem;
+	width: 37.2rem;
+	height: 75.5rem;
+	bottom: 0.3rem;
+	right: 71.5rem;
 }
 
 .scanner__content {
