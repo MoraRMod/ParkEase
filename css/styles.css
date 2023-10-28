@@ -416,6 +416,11 @@ img {
 	padding: 4rem 0;
 	text-align: center;
 	text-shadow: -0.2rem 0.2rem 1rem #00000080;
+	transition: transform .3s;
+}
+
+.purchase__content:hover {
+	transform: scale(1.01);
 }
 
 .purchase__heading {
@@ -456,7 +461,7 @@ img {
 
 /* Testimonials */
 .testimonials {
-	margin-top: 25rem;
+	margin-top: 18rem;
 	color: var(--principal);
 	text-align: center;
 	position: relative;
