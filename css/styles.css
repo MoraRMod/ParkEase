@@ -259,7 +259,7 @@ img {
 	}
 }
 
-.list__item:nth-child(5){
+.list__item:nth-child(5) {
 	padding: 1rem;
 }
 
@@ -571,7 +571,7 @@ img {
 
 .target {
 	border: 0.3rem solid #ebeaed;
-	border-radius: .7rem;
+	border-radius: 0.7rem;
 	padding: 3rem 5rem 0 5rem;
 }
 
@@ -590,4 +590,62 @@ img {
 
 .target__graphic {
 	max-width: 100%;
+}
+
+/* Prices */
+.prices {
+	margin: 15rem 0;
+	color: var(--principal);
+	text-align: center;
+}
+
+.prices__heading {
+	font-size: 5.5rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.prices__paragraph {
+	color: var(--secundario);
+	font-size: 2rem;
+	font-weight: 300;
+	margin: 0;
+}
+
+.prices__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.parking {
+	display: flex;
+	flex-direction: column;
+	border: 0.3rem solid #ebeaed;
+	border-radius: 1rem;
+	margin-top: 6rem;
+}
+
+.parking__heading {
+	font-size: 2.7rem;
+	font-weight: 600;
+	margin: 4rem 0 0 0;
+}
+
+.parking__paragraph {
+	color: var(--secundario);
+	margin: 0;
+}
+
+.parking__price {
+	font-size: 6rem;
+	font-weight: 700;
+	display:inline-flex;
+	margin: 1rem auto;
+	position: relative;
+	
+	& .parking__price--dollar {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: 2.5rem 0.7rem 0 0;
+	}
 }
