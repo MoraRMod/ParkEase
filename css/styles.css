@@ -421,7 +421,7 @@ img {
 .purchase__heading {
 	margin: 0;
 	font-size: 5.5rem;
-	line-height: 1.2;
+	line-height: 1.6;
 }
 
 .purchase__paragraph {
@@ -439,7 +439,7 @@ img {
 	padding: 1rem 2rem;
 	color: var(--blanco);
 	display: inline-block;
-	margin-top: 3rem;
+	margin-top: 4rem;
 	box-shadow: -0.2rem 0.2rem 1rem #00000080;
 	transition: background 0.3s ease-out;
 }
@@ -450,6 +450,6 @@ img {
 
 .purchase__info {
 	display: block;
-	margin-top: 3rem;
+	margin-top: 4rem;
 	padding: 0 37rem;
 }
