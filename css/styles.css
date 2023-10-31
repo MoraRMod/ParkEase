@@ -637,10 +637,31 @@ img {
 	display:inline-flex;
 	margin: 1rem auto;
 	position: relative;
-	
-	& .parking__price--dollar {
-		font-size: 1.5rem;
-		font-weight: 600;
-		margin: 2.5rem 0.7rem 0 0;
-	}
+}
+
+.parking__price--dollar {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 2.5rem 0.7rem 0 0;
+}
+
+.parking__button {
+	display: inline;
+	color: var(--principal);
+	font-weight: 600;
+	font-size: 1.8rem;
+	border-radius: 2.8rem;
+	padding: 1rem;
+	margin: 0 6.5rem;
+	border-style: solid;
+	border-color: #ebeaed;
+	transition: border-color 0.3s ease-out;
+}
+
+.parking__button--moreText{
+	margin: 0 3.5rem;
+}
+
+.parking__button:hover {
+	border-color: #cbcbcc;
 }
