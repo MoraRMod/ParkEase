@@ -287,6 +287,7 @@ img {
 .process__dots {
 	background: #ebeaed;
 	color: #9594a5;
+	font-size: 1.8rem;
 	display: block;
 	border-radius: 50%;
 	height: 4rem;
