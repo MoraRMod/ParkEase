@@ -25,6 +25,7 @@ body {
 	font-family: var(--fuentePrincipal);
 	font-size: 1.6rem;
 	line-height: 1.8;
+	background-color: var(--blanco);
 }
 
 /* Globales */
@@ -618,6 +619,26 @@ img {
 	border: 0.3rem solid #ebeaed;
 	border-radius: 1rem;
 	margin-top: 6rem;
+	align-items: center;
+	margin-bottom: auto;
+}
+
+.parking:nth-child(1) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right-width: 0;
+}
+
+.parking:nth-child(2),
+.parking:nth-child(3) {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right-width: 0;
+}
+
+.parking:nth-child(4) {
+	border-top-left-radius: 0;
 }
 
 .parking__heading {
@@ -634,9 +655,8 @@ img {
 .parking__price {
 	font-size: 6rem;
 	font-weight: 700;
-	display:inline-flex;
-	margin: 1rem auto;
-	position: relative;
+	display: inline-flex;
+	margin: 1rem auto 2rem auto;
 }
 
 .parking__price--dollar {
@@ -651,17 +671,34 @@ img {
 	font-weight: 600;
 	font-size: 1.8rem;
 	border-radius: 2.8rem;
-	padding: 1rem;
-	margin: 0 6.5rem;
+	padding: 1rem 2.5rem;
+	margin-bottom: 5rem;
 	border-style: solid;
 	border-color: #ebeaed;
-	transition: border-color 0.3s ease-out;
-}
-
-.parking__button--moreText{
-	margin: 0 3.5rem;
+	transition: border-color 0.3s ease-out, background-color 0.3s ease-out,
+	color 0.3s ease-out;
 }
 
 .parking__button:hover {
-	border-color: #cbcbcc;
+	color: var(--blanco);
+	border-color: #22cbb7;
+	background-color: #22cbb7;
+}
+
+.parking__benefit {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	font-weight: 500;
+}
+
+.parking__paragraph--benefit {
+	display: block;
+	margin: 0;
+	padding: 2rem 0;
+	border: 0.3rem solid #ebeaed;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
 }
