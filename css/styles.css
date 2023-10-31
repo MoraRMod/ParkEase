@@ -86,10 +86,10 @@ img {
 	position: absolute;
 	padding-left: 81rem;
 	margin-top: 8rem;
+}
 
-	& .header__img {
-		width: 75rem;
-	}
+.header__img {
+	width: 75rem;
 }
 
 .header__text {
@@ -189,10 +189,6 @@ img {
 	padding-left: 15rem;
 	margin: 10rem auto;
 	color: var(--principal);
-
-	& .list__paragraph {
-		color: var(--secundario);
-	}
 }
 
 .process__heading {
@@ -222,6 +218,7 @@ img {
 }
 
 .list__paragraph {
+	color: var(--secundario);
 	font-size: 1.8rem;
 }
 
@@ -234,10 +231,10 @@ img {
 
 .processContent__graphic {
 	max-width: 100%;
+}
 
-	& .processContent__img {
-		border-radius: 1rem;
-	}
+.processContent__img {
+	border-radius: 1rem;
 }
 
 .processContent__content {
@@ -245,18 +242,18 @@ img {
 	grid-column: 2 / 4;
 	margin-bottom: 2rem;
 	padding-left: 3rem;
+}
 
-	& .processContent__heading {
-		font-size: 2.5rem;
-		margin-top: 0;
-		padding-top: 2rem;
-		text-transform: uppercase;
-	}
+.processContent__heading {
+	font-size: 2.5rem;
+	margin-top: 0;
+	padding-top: 2rem;
+	text-transform: uppercase;
+}
 
-	& .processContent__paragraph {
-		padding-right: 20rem;
-		color: var(--secundario);
-	}
+.processContent__paragraph {
+	padding-right: 20rem;
+	color: var(--secundario);
 }
 
 .list__item:nth-child(5) {
@@ -330,10 +327,6 @@ img {
 	margin: 15rem auto;
 	color: var(--principal);
 	margin-bottom: 10rem;
-
-	& .scanner__paragraph {
-		color: var(--secundario);
-	}
 }
 
 .scanner__grid {
@@ -382,6 +375,7 @@ img {
 }
 
 .scanner__paragraph {
+	color: var(--secundario);
 	font-size: 2rem;
 	line-height: 2.8rem;
 	margin-bottom: 7rem;
