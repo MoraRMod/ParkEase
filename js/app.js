@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const links = document.querySelectorAll(".navigation__link");
 	const iphoneS = document.getElementById("iphoneScanner");
 	const fondoS = document.getElementById("fondoScanner");
 	const blurS = document.getElementById("blurScanner");
@@ -7,16 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	let slideIndex = 0;
 	let timer;
-
-	links.forEach((link) => {
-		link.addEventListener("mouseover", () => {
-			link.style.transform = "scale(1.15)";
-		});
-
-		link.addEventListener("mouseout", () => {
-			link.style.transform = "scale(1)";
-		});
-	});
 
 	iphoneS.addEventListener("mouseover", () => {
 		iphoneS.style.transition = "transform 0.3s";
