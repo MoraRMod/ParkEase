@@ -5,6 +5,7 @@
 	--negro: #1b1c1e;
 	--principal: #1e0e62;
 	--secundario: #a1a1b0;
+	--terceario: #22cbb7;
 	--fuentePrincipal: "DM Sans", sans-serif;
 	--logo: "League Spartan", sans-serif;
 }
@@ -273,7 +274,7 @@ img {
 
 .list__button {
 	border-radius: 2.8rem;
-	background: #22cbb7;
+	background: var(--terceario);
 	font-size: 2.3rem;
 	font-weight: 300;
 	border-style: none;
@@ -686,8 +687,8 @@ img {
 
 .parking__button:hover {
 	color: var(--blanco);
-	border-color: #22cbb7;
-	background-color: #22cbb7;
+	border-color: var(--terceario);
+	background-color: var(--terceario);
 }
 
 .parking__benefit {
@@ -775,7 +776,7 @@ img {
 	background: url("/src/checkbox.png") no-repeat;
 	background-position: center center;
 	background-size: 1.2rem;
-	background-color: #22cbb7;
+	background-color: var(--terceario);
 }
 
 .signin__paragraph {
@@ -787,7 +788,7 @@ img {
 
 .signin__button {
 	border-radius: 2.8rem;
-	background: #22cbb7;
+	background: var(--terceario);
 	font-size: 2.3rem;
 	font-weight: 500;
 	border-style: none;
@@ -817,11 +818,66 @@ img {
 }
 
 .signin__access {
-	color: #22cbb7;
+	color: var(--terceario);
 	font-weight: 500;
 	transition: color 0.3s ease-out;
 }
 
 .signin__signin:hover {
 	color: #2bb3a1;
+}
+
+/* Footer */
+.footer {
+	background-color: var(--principal);
+	color: var(--blanco);
+	margin: 0;
+	padding: 5rem 0;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.policy {
+	display: flex;
+	flex-direction: column;
+}
+
+.policy__flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.policy__flex:nth-child(2) {
+	border-top-color: var(--secundario);
+	border-top-style: solid;
+	border-width: 0.1rem;
+	width: 100%;
+	margin: 3rem 0;
+}
+
+.policy__social {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	justify-items: center;
+	align-items: center;
+	column-gap: 3rem;
+}
+
+.policy__provacyTerms {
+	color: var(--blanco);
+}
+
+.navigation__link--footer {
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.policy__red {
+	width: 2.5rem;
+}
+
+.navigation__policy {
+	padding: 0;
 }
