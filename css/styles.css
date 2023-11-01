@@ -174,12 +174,11 @@ img {
 	font-size: 1.5rem;
 	color: var(--blanco);
 	display: inline-block;
-	transform: scale(1);
 	transition: transform 0.2s;
 }
 
 .navigation__link:hover {
-	transform: scale(1.15);
+	transform: scale(1.1);
 }
 
 .navigation__link--logo {
@@ -867,6 +866,11 @@ img {
 
 .policy__provacyTerms {
 	color: var(--blanco);
+	transition: transform 0.2s;
+}
+
+.policy__provacyTerms:hover {
+	transform: scale(1.1);
 }
 
 .navigation__link--footer {
