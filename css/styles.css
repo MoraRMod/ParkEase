@@ -69,7 +69,8 @@ img {
 	justify-items: center;
 }
 
-[class$="__blur"] {
+[class$="__blur"],
+[class$="__blur--signup"] {
 	backdrop-filter: blur(0.3rem);
 }
 
@@ -79,7 +80,7 @@ img {
 .header {
 	background: url(../src/Fondo_Header.svg);
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: center center;
 	background-size: 100%;
 	background-color: #2f1893;
 }
@@ -708,18 +709,15 @@ img {
 }
 
 /* Income */
-.income {
-	background: url(../src/Fondo_Income.svg);
-	background-repeat: no-repeat;
-	background-position: center left;
-	background-size: 100%;
-}
-
 .income__blur {
 	padding-bottom: 15rem;
 }
 
-.login {
+.income__blur--signup {
+	padding-bottom: 10rem;
+}
+
+.signin {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -729,22 +727,26 @@ img {
 	box-shadow: 0 0 5rem #0000004d;
 }
 
-.login__heading {
+.signin__signup {
+	margin: 11rem 36rem 4.0718rem 36rem;
+}
+
+.signin__heading {
 	color: var(--principal);
 	font-weight: 700;
 }
 
-.login__flex {
+.signin__flex {
 	display: flex;
 	flex-direction: column;
 }
 
-.login__input {
+.signin__input {
 	display: flex;
 	flex-direction: column;
 }
 
-.login__stuffed {
+.signin__stuffed {
 	border-radius: 3rem;
 	margin: 1rem auto;
 	font-size: 2rem;
@@ -754,13 +756,13 @@ img {
 	width: 37rem;
 }
 
-.login__terms {
+.signin__terms {
 	display: flex;
 	align-items: center;
 	margin: 1rem 0 0 0;
 }
 
-.login__checkbox {
+.signin__checkbox {
 	height: 2.3rem;
 	width: 2.3rem;
 	cursor: pointer;
@@ -769,21 +771,21 @@ img {
 	border-radius: 0.7rem;
 }
 
-.login__checkbox:checked {
+.signin__checkbox:checked {
 	background: url("/src/checkbox.png") no-repeat;
 	background-position: center center;
 	background-size: 1.2rem;
 	background-color: #22cbb7;
 }
 
-.login__paragraph {
+.signin__paragraph {
 	display: inline;
 	padding-left: 1rem;
 	color: var(--secundario);
 	font-weight: 300;
 }
 
-.login__button {
+.signin__button {
 	border-radius: 2.8rem;
 	background: #22cbb7;
 	font-size: 2.3rem;
@@ -797,11 +799,11 @@ img {
 	transition: background 0.3s ease-out;
 }
 
-.login__button:hover {
+.signin__button:hover {
 	background: #2bb3a1;
 }
 
-.login__login {
+.signin__signin {
 	margin: 5rem 0 3rem 0;
 	border-top: 0.1rem solid #ebeaed;
 	width: 37rem;
@@ -809,17 +811,17 @@ img {
 	text-align: center;
 }
 
-.login__paragraph--login {
+.signin__paragraph--signin {
 	font-weight: 500;
 	margin-right: 0.6rem;
 }
 
-.login__signin {
+.signin__access {
 	color: #22cbb7;
 	font-weight: 500;
 	transition: color 0.3s ease-out;
 }
 
-.login__signin:hover {
+.signin__signin:hover {
 	color: #2bb3a1;
 }
