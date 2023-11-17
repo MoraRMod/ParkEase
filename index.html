@@ -28,10 +28,10 @@
 						</div>
 
 						<div class="navigation__section">
-							<a href="#recorrido" class="navigation__link">Recorrido</a>
-							<a href="#precios" class="navigation__link">Precios</a>
+							<a href="#steps" class="navigation__link">Recorrido</a>
+							<a href="#PricePlans" class="navigation__link">Precios</a>
 							<a href="#info" class="navigation__link">Acerca</a>
-							<a href="#" class="navigation__link">Soporte</a>
+							<a href="#message" class="navigation__link">Soporte</a>
 						</div>
 
 						<div class="navigation__section">
@@ -76,7 +76,7 @@
 		</div>
 	</header>
 
-	<main class="process" id="recorrido">
+	<main class="process" id="steps">
 		<div class="process__container">
 			<h2 class="process__heading">Easy Steps</h2>
 
@@ -272,7 +272,7 @@
 		</div>
 	</section>
 
-	<section class="prices" id="precios">
+	<section class="prices" id="PricePlans">
 		<div class="prices__container">
 			<h2 class="prices__heading">Pricing Plans</h2>
 			<p class="prices__paragraph">Start with free trial. No credit card needed. Cancel at anytime.</p>
@@ -336,7 +336,7 @@
 						<p class="parking__price parking__price--dollar">$</p>149
 					</h4>
 
-					<a href=#"" class="parking__button">Get Started</a>
+					<a href="#" class="parking__button">Get Started</a>
 
 					<div class="parking__benefit">
 						<p class="parking__paragraph--benefit">As Much Space as Needed</p>
@@ -344,6 +344,65 @@
 						<p class="parking__paragraph--benefit">Unlimited Users</p>
 						<p class="parking__paragraph--benefit">Unlimited Dates</p>
 						<p class="parking__paragraph--benefit">Unlimited File Recovery</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="message">
+		<div class="contact__container">
+			<div class="contact__grid">
+				<div class="contact__flex">
+					<h2 class="contact__hading">Get in Touch</h2>
+					<p class="contact__paragraph">We appreciate each customer and we are
+						proud that 60% of clients come back to work
+						with us again.</p>
+
+					<div class="data">
+						<div class="data__graphic">
+							<img src="./src/phone.svg" alt="Phone" class="target__view">
+						</div>
+
+						<a href="tel: 991" class="data__link">+52 33 4852 6528</a>
+
+						<div class="data__graphic">
+							<img src="./src/email.svg" alt="Email" class="target__view">
+						</div>
+
+						<a href="mailto: udg@udg.mx" class="data__link">parkease@parkease.com</a>
+					</div>
+
+					<div class="contact__line"></div>
+
+					<h3 class="contact__paragraph--map">Find Us on Map</h3>
+					<p class="contact__paragraph">Via Salaria, 243, 00199 Rome</p>
+
+					<div class="contact__map" id="map" style="height: 400px; width: 100%; background-color: grey;">
+					</div>
+				</div>
+
+				<div class="contact__flex">
+					<h2 class="contact__hading">You Can Mail Us</h2>
+					<p class="contact__paragraph">We are always looking for a next great project.</p>
+
+					<div class="send">
+						<div class="send__form">
+							<h3 class="send__heading">E-Mail</h3>
+							<input type="email" placeholder="Your email" class="send__stuffed">
+						</div>
+
+						<div class="send__form">
+							<h3 class="send__heading">Message</h3>
+							<input type="text" placeholder="Drop us a line" class="send__stuffed">
+						</div>
+
+						<div class="send__form">
+							<h3 class="send__heading">Name</h3>
+							<input type="text" placeholder="Your name" class="send__stuffed">
+
+							<a href="#" class="send__button">Send</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -382,10 +441,10 @@
 					<div class="policy__nav">
 						<nav class="navigation navigation__policy">
 							<div class="navigation__section">
-								<a href="#recorrido" class="navigation__link navigation__link--footer">Recorrido</a>
-								<a href="#precios" class="navigation__link navigation__link--footer">Precios</a>
+								<a href="#steps" class="navigation__link navigation__link--footer">Recorrido</a>
+								<a href="#PricePlans" class="navigation__link navigation__link--footer">Precios</a>
 								<a href="#info" class="navigation__link navigation__link--footer">Acerca</a>
-								<a href="#" class="navigation__link navigation__link--footer">Soporte</a>
+								<a href="#message" class="navigation__link navigation__link--footer">Soporte</a>
 							</div>
 						</nav>
 					</div>
@@ -398,6 +457,8 @@
 	</footer>
 
 	<script src="./js/app.js"></script>
+	<script src="./js/map.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAPdOZDmQDAMa8guBg6Hmi8O5WZy161PA&callback=initMap"></script>
 </body>
 
 </html>
