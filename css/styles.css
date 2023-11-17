@@ -83,7 +83,7 @@ img {
 	font-size: 2rem;
 	padding: 1rem 2rem;
 	border: 0.3rem solid var(--cuarto);
-	color: var(--cuarto);
+	color: var(--negro);
 	width: 37rem;
 }
 
@@ -756,16 +756,6 @@ img {
 .signin__input {
 	display: flex;
 	flex-direction: column;
-}
-
-.signin__stuffed {
-	border-radius: 3rem;
-	margin: 1rem auto;
-	font-size: 2rem;
-	padding: 1rem 2rem;
-	border: 0.3rem solid var(--cuarto);
-	color: var(--cuarto);
-	width: 37rem;
 }
 
 .signin__terms {
