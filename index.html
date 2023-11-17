@@ -357,50 +357,57 @@
 			<div class="payment__grid">
 				<div class="payment__methods">
 					<input type="radio" name="option" value="paypal" id="paypal" class="payment__radio" checked>
-					<label for="paypal" class="payment__text">PayPal</label>
-					
-					<p class="payment__paragraph">Safe payment online. Credit card needed. PayPal account is not necessary.</p>
-					
-					<input type="email" placeholder="Email address" class="payment__stuffed">
+
+					<div class="payment__space">
+						<label for="paypal" class="payment__text">PayPal</label>
+
+						<p class="payment__paragraph">Safe payment online. Credit card needed. PayPal account is not
+							necessary.</p>
+
+						<input type="email" placeholder="Email address" class="payment__stuffed">
+					</div>
 				</div>
-				
+
 				<div class="payment__methods">
 					<input type="radio" name="option" value="credit" id="credit" class="payment__radio">
-					<label for="credit" class="payment__text">Credit Card</label>
 
-					<p class="payment__paragraph">Safe money transfer using your bank account.</p>
-					
-					<div class="payment__targets">
-						<div class="payment__graphic">
-							<img src="./src/visa.svg" alt="Visa" class="payment__img">
+					<div class="payment__space">
+						<label for="credit" class="payment__text">Credit Card</label>
+
+						<p class="payment__paragraph">Safe money transfer using your bank account.</p>
+
+						<div class="payment__targets">
+							<div class="payment__graphic">
+								<img src="./src/visa.svg" alt="Visa" class="payment__img">
+							</div>
+
+							<div class="payment__graphic">
+								<img src="./src/mastercard.svg" alt="Mastercard" class="payment__img">
+							</div>
 						</div>
 
-						<div class="payment__graphic">
-							<img src="./src/mastercard.svg" alt="Mastercard" class="payment__img">
-						</div>
-					</div>
+						<div class="card">
+							<div class="card__content">
+								<p class="card__paragraph">Credit card number</p>
+								<input type="tel" class="card__stuffed">
+							</div>
 
-					<div class="card">
-						<div class="card__content">
-							<p class="card__paragraph">Credit card number</p>
-							<input type="tel" class="card__stuffed">
-						</div>
+							<div class="card__content">
+								<p class="card__paragraph">Expiration</p>
+								<input type="tel" class="card__stuffed">
+							</div>
 
-						<div class="card__content">
-							<p class="card__paragraph">Expiration</p>
-							<input type="tel" class="card__stuffed">
-						</div>
+							<div class="card__content">
+								<p class="card__paragraph">Cardholder name</p>
+								<input type="tel" class="card__stuffed">
+							</div>
 
-						<div class="card__content">
-							<p class="card__paragraph">Cardholder name</p>
-							<input type="tel" class="card__stuffed">
-						</div>
+							<div class="card__content">
+								<p class="card__paragraph">Cvv Code</p>
+								<input type="tel" class="card__stuffed">
 
-						<div class="card__content">
-							<p class="card__paragraph">Cvv Code</p>
-							<input type="tel" class="card__stuffed">
-
-							<a href="#" class="card__button">Checkout</a>
+								<a href="#" class="card__button">Checkout</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -516,7 +523,8 @@
 
 	<script src="./js/app.js"></script>
 	<script src="./js/map.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAPdOZDmQDAMa8guBg6Hmi8O5WZy161PA&callback=initMap"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAPdOZDmQDAMa8guBg6Hmi8O5WZy161PA&callback=initMap"></script>
 </body>
 
 </html>
