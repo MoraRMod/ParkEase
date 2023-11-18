@@ -952,11 +952,6 @@ img {
 	background-color: var(--terceario);
 }
 
-.payment__radio:focus + .payment__space {
-    border-color: var(--terceario);
-}
-
-
 /* Contact */
 .contact {
 	margin: 15rem 0;
