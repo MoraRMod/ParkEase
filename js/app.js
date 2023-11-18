@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const fondoS = document.getElementById("fondoScanner");
 	const blurS = document.getElementById("blurScanner");
 	const testimonials = document.querySelectorAll(".testimonials__user");
+	const radioButtons = document.querySelectorAll(".payment__radio");
 
 	let slideIndex = 0;
 	let timer;
@@ -23,6 +24,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		iphoneS.style.transform = "scale(1)";
 		blurS.style.transform = "scale(1)";
 		fondoS.style.transform = "scale(1)";
+	});
+
+	radioButtons.forEach((radioButton) => {
+		radioButton.addEventListener("change", function () {
+			// Reinicia el color del borde para todos los elementos
+			document.querySelectorAll(".payment__methods").forEach((method) => {
+				method.style.borderColor = "var(--cuarto)";
+			});
+
+			// Cambia el color del borde solo para el elemento seleccionado
+			if (this.checked) {
+				const parentMethod = this.closest(".payment__methods");
+				if (parentMethod) {
+					parentMethod.style.borderColor = "var(--terceario)";
+				}
+			}
+		});
 	});
 
 	function showSlides(n) {
