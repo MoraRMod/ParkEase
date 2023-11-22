@@ -1155,12 +1155,14 @@ img {
 /* Table */
 .table {
 	width: 100%;
+	padding-bottom: 13.812rem;
 }
 
 .table__heading {
 	text-align: center;
 	font-size: 8rem;
 	font-weight: 900;
+	color: var(--blanco);
 }
 
 .table__container {
