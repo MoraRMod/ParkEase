@@ -34,8 +34,8 @@
 
 					<div class="signin__flex">
 						<div class="signin__input">
-							<input type="text" placeholder="Car Plates" class="signin__stuffed">
-							<input type="text" placeholder="Telephone" class="signin__stuffed">
+							<input type="text" placeholder="Car Plates" class="signin__stuffed" id="carPlates">
+							<input type="text" placeholder="Telephone" class="signin__stuffed" id="telephone">
 						</div>
 
 						<div class="signin__terms">
@@ -52,9 +52,30 @@
 						<a href="./signup.html" class="signin__access">Sign Up</a>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</header>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const signInButton = document.querySelector('.signin__button');
+
+			signInButton.addEventListener('click', function (event) {
+				event.preventDefault();
+
+				const carPlates = document.getElementById('carPlates').value;
+				const telephone = document.getElementById('telephone').value;
+
+				if (carPlates === 'admin' && telephone === 'admin') {
+					window.location.href = './users.html';
+				} else {
+					alert('Credenciales incorrectas. Por favor, inténtelo de nuevo.');
+				}
+			});
+		});
+	</script>
+
 </body>
 
 </html>
