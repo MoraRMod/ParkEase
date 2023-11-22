@@ -28,12 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	radioButtons.forEach((radioButton) => {
 		radioButton.addEventListener("change", function () {
-			// Reinicia el color del borde para todos los elementos
 			document.querySelectorAll(".payment__methods").forEach((method) => {
 				method.style.borderColor = "var(--cuarto)";
 			});
 
-			// Cambia el color del borde solo para el elemento seleccionado
 			if (this.checked) {
 				const parentMethod = this.closest(".payment__methods");
 				if (parentMethod) {
