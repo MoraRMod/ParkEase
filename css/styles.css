@@ -1151,3 +1151,43 @@ img {
 .navigation__policy {
 	padding: 0;
 }
+
+/* Table */
+.table {
+	width: 100%;
+}
+
+.table__heading {
+	text-align: center;
+	font-size: 8rem;
+	font-weight: 900;
+}
+
+.table__container {
+	display: flex;
+	justify-content: center;
+}
+
+.users {
+	width: 80%;
+	height: 100%;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0 0 1rem #0000001a;
+	margin: 5rem 0 0 0;
+}
+
+.users__spaces:hover {
+	background-color: #f5f5f5;
+}
+
+.users__thead,
+.users__tbody {
+	padding: 1.2rem;
+	text-align: center;
+	border-bottom: 0.1rem solid #ddd;
+}
+
+.users__thead {
+	background-color: #e2e2e2;
+}
